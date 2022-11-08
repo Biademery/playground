@@ -39,6 +39,20 @@ section div #countdown {
     font-size: 14px;
 }
 
+section div #timer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    font-weight: 500;
+    font-size: 72px;
+    padding: 0px 0px 0px 25px;
+}
+
+#timer div {
+    margin: auto;
+    color: var(--black);
+}
+
 section p {
     font-weight: 400;
     color: var(--text-color);
@@ -58,6 +72,12 @@ section div button {
     color: #ffffff;
     font-weight: 500;
     font-size: 16px;
+}
+
+section div button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 #button {
