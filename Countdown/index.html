@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+
     <title>Countdown</title>
   </head>
   <body>
     <header>
-      <img src="./images/top-image.svg" alt="Imagem do topo" />
+      <img src="./assets/images/top-image.svg" alt="Imagem do topo" />
     </header>
     <main>
       <section>
         <div>
           <h1>READY TO LAUNCH IN...</h1>
-          <div>
+          <div id="time">
             <p>Dias</p>
             <p>Horas</p>
             <p>Minutos</p>
@@ -23,14 +32,16 @@
           <div></div>
         </div>
         <p>Inscreva-se para saber mais sobre o lançamento</p>
-        <button>Inscreva-se</button>
+        <div id="button">
+          <button>Inscreva-se</button>
+        </div>
       </section>
       <aside>
-        <img src="./images/rocket.svg" alt="Imagem de um foguete" />
+        <img src="./assets/images/rocket.svg" alt="Imagem de um foguete" />
       </aside>
     </main>
     <footer>
-      <img src="./images/bottom-image.svg" alt="Imagem de baixo" />
+      <img src="./assets/images/bottom-image.svg" alt="Imagem de baixo" />
     </footer>
   </body>
 </html>
