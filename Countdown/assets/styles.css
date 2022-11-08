@@ -29,7 +29,7 @@ section h1 {
     margin: auto;
 }
 
-section div #time {
+section div #countdown {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;  
 
