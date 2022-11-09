@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+
+body {
+    font-family: 'Merriweather Sans', 'sans-serif';
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+
+section #profile {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    width: 348px;
+    height: 292px;
+}
+
+section #profile img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--bg-techs);
+}
+
+section div #profile h1 {
+    font-weight: 700;
+}
+
+section div #profile p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+section #links {
+    background-color: var(--bg-cards);
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 12px;
+}
+
+section #links #location{
+    margin-top: 5px;
+}
+
+section #links #location,
+section #links #github,
+section #links #linkedin,
+section #links #mail {
+    display: grid;
+    grid-template-columns: 14% 86%;
+    align-items: center;
+    padding: 5px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+aside #my-projects {
+    background-color: var(--bg-cards);
+    width: 952px;
+    height: 86px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+aside #project-1,
+aside #project-2 {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    width: 461px;
+    height: 186px;
+    padding: 10px;
+
+}
+
+
+aside #technologies {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    width: 348px;
+    height: 208px;
+    padding: 10px;
+
+}
+
+section #education {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    width: 348px;
+    height: 208px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section #education #date {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+section #certificates {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    width: 348px;
+    height: 352px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section #certificates ul {
+    padding-left: 40px;
+
+}
