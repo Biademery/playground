@@ -107,14 +107,6 @@ section #certificates ul {
     padding-left: 40px;
 }
 
-section #technologies {
-    background-color: var(--bg-cards);
-    border-radius: 20px;
-
-    width: auto;
-    padding: 20px;
-}
-
 aside {
     display: flex;
     flex-direction: column;
@@ -181,7 +173,7 @@ aside #project-2 .language {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background-color: #E7DE79;
+    background-color: var(--bg-techs);
     margin-top: 5px;
 }
 
@@ -215,4 +207,34 @@ aside #education #date {
 aside #education #description {
     font-weight: 300;
     font-size: 14px;
+}
+
+aside #skills {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+
+    width: auto;
+    padding: 20px;
+}
+
+aside #skills h2 {
+    margin-bottom: 20px;
+}
+
+aside #skills ul {
+    list-style-type: none;
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+aside #skills li {
+    background-color: var(--bg-techs);
+    color: black;
+    border-radius: 20px;
+
+    padding: 10px;
 }
