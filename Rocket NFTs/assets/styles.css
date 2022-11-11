@@ -159,7 +159,7 @@ aside #lorem div p {
 
 aside img {
     border-bottom: 1px solid var(--subtitle-color);
-    width: 1022px;
+    width: 100%;
 }
 
 main #populares h1 {
@@ -216,11 +216,12 @@ section #astronauta-4 span {
     color: var(--color-logo);
 }
 
-section #astronauta-1 img,
-section #astronauta-2 img,
-section #astronauta-3 img,
-section #astronauta-4 img {
+section .astronautas,
+section .astronautas,
+section .astronautas,
+section .astronautas {
     margin-bottom: 30px;
+    width: 70%;
 }
 
 section #astronauta-2-4 {
@@ -233,7 +234,7 @@ section #mayk,
 section #jakeliny,
 section #joao,
 section #tamires {
-    margin-bottom: 30px;
+    margin: 30px 0px;
 }
 
 footer {
