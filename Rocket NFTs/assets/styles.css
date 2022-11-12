@@ -58,7 +58,7 @@ header button {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    color: #000;
+    color: var(--black-text);
 }
 
 header button:hover {
@@ -235,6 +235,29 @@ section #jakeliny,
 section #joao,
 section #tamires {
     margin: 30px 0px;
+}
+
+#melhores h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#melhores h1 span {
+    color: var(--color-logo);
+}
+
+#melhores #brito,
+#melhores #biro,
+#melhores #silva,
+#melhores #santos,
+#melhores #fonseca {
+    width: fit-content;
+    padding: 40px;
+    background-color: var(--card-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer {
