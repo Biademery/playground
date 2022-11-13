@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="" src="" width="100%">
+  <img alt="" src="./assets/RocketNFTs.png" width="100%">
 </p>
 
 ## 💻 Projeto
