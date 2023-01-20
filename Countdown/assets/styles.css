@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100vh;
+}
+
 :root {
     --black: #4D4C59;
     --purple: #6C63FF;
@@ -15,9 +19,26 @@ body {
     font-family: 'Poppins', 'sans-serif';
 }
 
+.header {
+    height: 20vh;
+    background-image: url('../assets/images/top-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.footer {
+    height:20vh;
+    background-image: url('../assets/images/bottom-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 main {
+    height: 60vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 60% 40%; 
     align-items: center; 
 }
 
@@ -30,9 +51,7 @@ section h1 {
 }
 
 section div #countdown {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;  
-
+    display: flex;
 
     font-weight: 300;
     color: var(--light-grey);
@@ -40,12 +59,11 @@ section div #countdown {
 }
 
 section div #timer {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    display: flex;
+    justify-content: space-around;
 
     font-weight: 500;
     font-size: 72px;
-    padding: 0px 0px 0px 25px;
 }
 
 #timer div {
@@ -59,7 +77,7 @@ section p {
     font-size: 14px;
     width: fit-content;
     margin: auto;
-    padding: 20px 0px 20px;
+    padding: 20px 0;
 }
 
 section div button {
@@ -82,5 +100,9 @@ section div button:hover {
 
 #button {
     width: fit-content;
+    margin: auto;
+}
+
+aside {
     margin: auto;
 }
