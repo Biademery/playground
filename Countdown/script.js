@@ -1,5 +1,6 @@
 function updateTimer() {
-  const future = Date.parse('jan 03, 2024 00:00:00');
+  const timer = document.querySelector('#timer');
+  const future = Date.parse('mar 07, 2023 00:00:00');
   const now = new Date();
   const countdown = future - now;
 
@@ -13,12 +14,14 @@ function updateTimer() {
   const m = mins - hours * 60;
   const s = secs - mins * 60;
 
-  document.getElementById('timer').innerHTML = `
-  <span>${String(d).length === 1 ? `0${d}` : d}</span> :
-  <span>${String(m).length === 1 ? `0${m}` : m}</span> :
-  <span>${String(h).length === 1 ? `0${h}` : h}</span> :
-  <span>${String(s).length === 1 ? `0${s}` : s}</span>
+  const timerHTML = `
+  <div>${String(d).length === 1 ? `0${d}` : d}</div> :
+  <div>${String(h).length === 1 ? `0${h}` : h}</div> :
+  <div>${String(m).length === 1 ? `0${m}` : m}</div> :
+  <div>${String(s).length === 1 ? `0${s}` : s}</div>
 `;
+
+  timer.innerHTML = timerHTML;
 }
 
-setInterval(updateTimer(), 1000);
+setInterval('updateTimer()', 1000);
